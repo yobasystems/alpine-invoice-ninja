@@ -8,10 +8,10 @@ else
 fi
 
 if [ ! -d /usr/html/app ] ; then
-  curl -fLk -o /tmp/ninja.zip  "https://github.com/invoiceninja/invoiceninja/archive/v$INVOICENINJA_VERSION.zip"
+  curl -fLk -o /tmp/ninja.zip  "https://download.invoiceninja.com"
   mkdir /tmp/ninja-src
   unzip /tmp/ninja.zip -d /tmp/ninja-src
-  mv -f /tmp/ninja-src/invoiceninja-$INVOICENINJA_VERSION/* /usr/html/
+  mv -f /tmp/ninja-src/ninja/* /usr/html/
   rm -R /tmp/ninja*
   chown -R nginx:www-data /usr/html
 else
