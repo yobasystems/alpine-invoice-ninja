@@ -1,4 +1,4 @@
-FROM armhf/alpine:3.5
+FROM yobasystems/alpine:3.5-armhf
 LABEL maintainer "Dominic Taylor <dominic@yobasystems.co.uk>" architecture="ARM32v7/armhf"
 
 ENV INVOICENINJA_VERSION="3.5.1" \
@@ -36,10 +36,12 @@ RUN sed -i 's/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/g' /etc/php7/php.ini && \
     sed -i 's/expose_php = On/expose_php = Off/g' /etc/php7/php.ini && \
     sed -i "s/nginx:x:100:101:nginx:\/var\/lib\/nginx:\/sbin\/nologin/nginx:x:100:101:nginx:\/usr:\/bin\/bash/g" /etc/passwd && \
     sed -i "s/nginx:x:100:101:nginx:\/var\/lib\/nginx:\/sbin\/nologin/nginx:x:100:101:nginx:\/usr:\/bin\/bash/g" /etc/passwd- && \
+    ln -s /usr/bin/php7 /usr/bin/php && \
     ln -s /sbin/php-fpm7 /sbin/php-fpm
 
 ADD files/nginx.conf /etc/nginx/
 ADD files/php-fpm.conf /etc/php7/
+ADD files/php.ini /etc/php7/
 ADD files/environment.env /environment.env
 ADD files/run.sh /
 RUN chmod +x /run.sh
