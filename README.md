@@ -2,14 +2,14 @@
 
 [![Docker Layers](https://img.shields.io/badge/docker%20layers-8-blue.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-nginx/) [![Docker Size](https://img.shields.io/badge/docker%20size-55%20MB-blue.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-nginx/) [![Docker Stars](https://img.shields.io/docker/stars/yobasystems/alpine-invoice-ninja.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-nginx/) [![Docker Pulls](https://img.shields.io/docker/pulls/yobasystems/alpine-invoice-ninja.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-nginx/)
 
-[![Alpine Version](https://img.shields.io/badge/alpine%20version-v3.6.2-green.svg?maxAge=2592000?style=flat-square)](http://alpinelinux.org/) [![Invoice Ninja Version](https://img.shields.io/badge/nginx%20version-v3.5.1-green.svg?maxAge=2592000?style=flat-square)](http://nginx.org/en/)
+[![Alpine Version](https://img.shields.io/badge/alpine%20version-v3.8.0-green.svg?maxAge=2592000?style=flat-square)](http://alpinelinux.org/) [![Invoice Ninja Version](https://img.shields.io/badge/nginx%20version-v4.5.3-green.svg?maxAge=2592000?style=flat-square)](http://nginx.org/en/)
 
 
 
-This Docker image [(yobasystems/alpine-invoice-ninja)](https://hub.docker.com/r/yobasystems/alpine-invoice-ninja/) is based on the minimal [Alpine Linux](http://alpinelinux.org/) with version 3.5.1 of [Invoice Ninja](https://github.com/invoiceninja/invoiceninja)
+This Docker image [(yobasystems/alpine-invoice-ninja)](https://hub.docker.com/r/yobasystems/alpine-invoice-ninja/) is based on the minimal [Alpine Linux](http://alpinelinux.org/) with version 4.5.3 of [Invoice Ninja](https://github.com/invoiceninja/invoiceninja)
 
-##### Alpine Version 3.6.2 (Released Jun 17, 2017)
-##### Invoice Ninja Version 3.5.1
+##### Alpine Version 3.8.0 (Released June 26, 2018)
+##### Invoice Ninja Version 4.5.3
 
 ----
 

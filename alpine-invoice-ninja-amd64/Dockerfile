@@ -1,7 +1,7 @@
-FROM yobasystems/alpine:3.5-amd64
-LABEL maintainer "Dominic Taylor <dominic@yobasystems.co.uk>" architecture="AMD64/x86_64"
+FROM yobasystems/alpine:3.8-amd64
+LABEL maintainer "Dominic Taylor <dominic@yobasystems.co.uk>" architecture="AMD64/x86_64" architecture="AMD64/x86_64" version="4.5.3" date="24-aug-2018"
 
-ENV INVOICENINJA_VERSION="3.5.1" \
+ENV INVOICENINJA_VERSION="4.5.3" \
     APP_ENV="production" \
     APP_URL="http://ninja.dev" \
     APP_KEY="randomappkey" \
