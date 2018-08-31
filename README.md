@@ -254,9 +254,9 @@ services:
 
 ## Source Repository
 
-* [Bitbucket - yobasystems/alpine-nginx](https://bitbucket.org/yobasystems/alpine-invoice-ninja/)
+* [Bitbucket - yobasystems/alpine-invoice-ninja](https://bitbucket.org/yobasystems/alpine-invoice-ninja/)
 
-* [Github - yobasystems/alpine-nginx](https://github.com/yobasystems/alpine-invoice-ninja)
+* [Github - yobasystems/alpine-invoice-ninja](https://github.com/yobasystems/alpine-invoice-ninja)
 
 ## Links
 
