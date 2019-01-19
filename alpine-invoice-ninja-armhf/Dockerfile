@@ -1,7 +1,7 @@
 FROM yobasystems/alpine:3.8-armhf
-LABEL maintainer "Dominic Taylor <dominic@yobasystems.co.uk>" architecture="ARM32v7/armhf" version="4.5.3" date="19-jan-2019"
+LABEL maintainer "Dominic Taylor <dominic@yobasystems.co.uk>" architecture="ARM32v7/armhf" version="4.5.8" date="19-jan-2019"
 
-ENV INVOICENINJA_VERSION="4.5.3" \
+ENV INVOICENINJA_VERSION="4.5.8" \
     APP_ENV="production" \
     APP_URL="http://ninja.dev" \
     APP_KEY="randomappkey" \
