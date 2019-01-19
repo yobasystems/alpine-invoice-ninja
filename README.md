@@ -1,8 +1,8 @@
 # Invoice Ninja Docker image running on Alpine Linux
 
-[![Docker Layers](https://img.shields.io/badge/docker%20layers-8-blue.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-nginx/) [![Docker Size](https://img.shields.io/badge/docker%20size-55%20MB-blue.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-nginx/) [![Docker Stars](https://img.shields.io/docker/stars/yobasystems/alpine-invoice-ninja.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-nginx/) [![Docker Pulls](https://img.shields.io/docker/pulls/yobasystems/alpine-invoice-ninja.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-nginx/)
+[![Docker Layers](https://img.shields.io/badge/docker%20layers-8-blue.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-invoice-ninja) [![Docker Size](https://img.shields.io/badge/docker%20size-55%20MB-blue.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-invoice-ninja) [![Docker Stars](https://img.shields.io/docker/stars/yobasystems/alpine-invoice-ninja.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-invoice-ninja) [![Docker Pulls](https://img.shields.io/docker/pulls/yobasystems/alpine-invoice-ninja.svg?maxAge=2592000?style=flat-square)](https://hub.docker.com/r/yobasystems/alpine-invoice-ninja)
 
-[![Alpine Version](https://img.shields.io/badge/alpine%20version-v3.8.0-green.svg?maxAge=2592000?style=flat-square)](http://alpinelinux.org/) [![Invoice Ninja Version](https://img.shields.io/badge/nginx%20version-v4.5.3-green.svg?maxAge=2592000?style=flat-square)](http://nginx.org/en/)
+[![Alpine Version](https://img.shields.io/badge/alpine%20version-v3.8.0-green.svg?maxAge=2592000?style=flat-square)](http://alpinelinux.org/) [![Invoice Ninja Version](https://img.shields.io/badge/invoiceninja%20version-v4.5.3-green.svg?maxAge=2592000?style=flat-square)](https://www.invoiceninja.org/)
 
 
 
@@ -29,7 +29,6 @@ Invoice Ninja is a free, open-source solution for invoicing and billing customer
 ## Architectures
 
 * ```:amd64```, ```:latest``` - 64 bit Intel/AMD (x86_64/amd64)
-* ```:i386```, ```:x86``` - 32 bit Intel/AMD (x86/i686)
 * ```:arm64v8```, ```:aarch64``` - 64 bit ARM (ARMv8/aarch64)
 * ```:arm32v7```, ```:armhf``` - 32 bit ARM (ARMv7/armhf)
 
@@ -41,6 +40,7 @@ Invoice Ninja is a free, open-source solution for invoicing and billing customer
 * ```:master``` master branch usually inline with latest
 * ```:v0.0.0``` version number related to docker version
 * ```:armhf```, ```:arm32v7``` Armv7 based on latest tag but arm architecture
+* ```:aarch64```, ```:arm64v8``` Armv8 based on latest tag but arm64 architecture
 
 
 ## FOR SQL SERVER
