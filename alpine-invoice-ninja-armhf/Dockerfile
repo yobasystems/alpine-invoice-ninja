@@ -29,7 +29,7 @@ RUN apk update && \
     php7-pdo_mysql php7-mysqli php7-session \
     php7-gd php7-iconv php7-mcrypt php7-gmp php7-zip \
     php7-curl php7-opcache php7-ctype php7-apcu \
-    php7-intl php7-bcmath php7-dom php7-mbstring php7-xmlreader php7-tokenizer mysql-client curl && apk add -u musl && \
+    php7-intl php7-bcmath php7-dom php7-mbstring php7-xmlreader php7-xmlwriter php7-tokenizer php7-xml mysql-client curl && apk add -u musl && \
     rm -rf /var/cache/apk/*
 
 RUN sed -i 's/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/g' /etc/php7/php.ini && \
