@@ -1,5 +1,5 @@
-FROM yobasystems/alpine:3.8-amd64
-LABEL maintainer "Dominic Taylor <dominic@yobasystems.co.uk>" architecture="AMD64/x86_64" version="4.5.3" date="19-jan-2019"
+FROM yobasystems/alpine:3.8-aarch64
+LABEL maintainer "Dominic Taylor <dominic@yobasystems.co.uk>" architecture="ARM64v8/aarch64" version="4.5.3" date="19-jan-2019"
 
 ENV INVOICENINJA_VERSION="4.5.3" \
     APP_ENV="production" \

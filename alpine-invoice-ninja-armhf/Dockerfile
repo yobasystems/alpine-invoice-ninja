@@ -1,5 +1,5 @@
 FROM yobasystems/alpine:3.8-armhf
-LABEL maintainer "Dominic Taylor <dominic@yobasystems.co.uk>" architecture="ARM32v7/armhf" architecture="ARM32v7/armhf" version="4.5.3" date="24-aug-2018"
+LABEL maintainer "Dominic Taylor <dominic@yobasystems.co.uk>" architecture="ARM32v7/armhf" version="4.5.3" date="19-jan-2019"
 
 ENV INVOICENINJA_VERSION="4.5.3" \
     APP_ENV="production" \
