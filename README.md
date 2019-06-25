@@ -252,6 +252,36 @@ services:
 
 ```
 
+## Errors / Workarounds
+
+First of all turn on `DEBUG='true'` in docker-compose.yml
+
+> Browser error: only supported ciphers are AES-128-CBC and AES-256-CBC with the correct key lengths.
+
+run: 
+* `docker exec -it invoiceninja_invoice-ninja_1 /usr/bin/php /usr/html/artisan cache:clear`
+* `docker-compose kill` # necessary
+* `docker exec -it invoiceninja_invoice-ninja_1 /usr/bin/php /usr/html/artisan key:generate`
+* copy/paste the base64-string into your docker-compose.yml `APP_KEY`
+* put `AES-128-CBC` as APP_CIPHER in docker-compose.yml
+
+> browser invoiceninja setup: cannot connect to the database during setup
+
+change `localhost` into `invoice-ninja-db`
+
+> SSL / Mixed-Content Error in browser
+
+add `REQUIRE_HTTPS='true'` in docker-compose.yml
+
+> I get a 404, invoiceninja was partially downloaded, docker stopped building
+
+the invoiceninja zipfile is quite big, therefore build like so:
+
+```
+  docker-compose kill
+  COMPOSE_HTTP_TIMEOUT=10000 docker-compose up --build --force-recreate -d
+```
+
 ## Source Repository
 
 * [Bitbucket - yobasystems/alpine-invoice-ninja](https://bitbucket.org/yobasystems/alpine-invoice-ninja/)
